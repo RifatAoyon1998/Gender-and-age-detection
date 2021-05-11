@@ -1,47 +1,4 @@
-# import cv2
-# import numpy as np
-# face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-# def face_extractor(img):
-#     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-#     face=face_classifier.detectMultiScale(gray,1.3,5)
-#
-#     if face is():
-#         return None
-#
-#     for(x,y,w,h) in face:
-#         cropped_face = img[y:y+h, x:x+w]
-#
-#     return cropped_face
-#
-# cap= cv2.VideoCapture(0)
-# count=0
-#
-# while True:
-#     ret, frame = cap.read()
-#     if face_extractor(frame) is not None:
-#         count = count+1
-#         fac = cv2.resize(face_extractor(frame),(200,200))
-#         fac = cv2.cvtColor(fac,cv2.COLOR_BGR2GRAY)
-#
-#         file_name_path = 'Detect'+str(count)+'.jpg'
-#         cv2.imwrite(file_name_path,fac)
-#         cv2.putText(fac, str(count), (50, 50), cv2.FONT_HERSHEY_COMPLEX,1,(0,255,0),2)
-#         cv2.imshow('Face Cropper',fac)
-#
-#     else:
-#         print("Face not found")
-#         pass
-#
-#     if cv2.waitKey(1)==13 or count==20:
-#         break
-#
-#
-# cap.release()
-# cv2.destroyAllWindows()
-# print('sample collected')
-#
-#
-#
+
 import cv2
 import math
 import argparse
